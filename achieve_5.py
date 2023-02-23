@@ -1,3 +1,9 @@
+#Name:          achieve_5.py
+#Author:        AJ Varatharajan
+#Date Created:  February 22, 2023
+#Date Last Modified: February 23, 2023
+#Purpose: Program will cycle through the values one to ten and will output each value expressed in cubed form.
+# 
 numbers = {
     1: {},
     2: {},
@@ -14,13 +20,14 @@ numbers = {
 for base, power in numbers.items():
     
     calcu = base ** 3  
+    
     store = [list[base]]
     store1 = [list[calcu]]
-    store2 = store1.extend(store) 
+    store2 = store.append(store1) 
     numbers2 = {}
     numbers2 = {base, calcu}
     print(numbers2)
-    print(store1)
+    print(store)
     
 
 
