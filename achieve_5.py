@@ -10,9 +10,23 @@ numbers = {
     9: {},
     10: {}
 }
+
 for base, power in numbers.items():
-    calcu = base ** 3
-    print(" {} to the power of 3 equals {}".format(base, calcu))
- 
+    
+    calcu = base ** 3  
+    store = [list[base]]
+    store1 = [list[calcu]]
+    store2 = store1.extend(store) 
+    numbers2 = {}
+    numbers2 = {base, calcu}
+    print(numbers2)
+    print(store1)
+    
+
+
+
+
+
+
 
     
